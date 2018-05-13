@@ -34,7 +34,15 @@
                <button type="button" class="btn btn-default">Bắt đầu thi ngay</button>       
             </div>
             <div id="slider-image">
-                <img src="../public/images/slide-image1.jpg" alt="slide-image-1">
+                <div>
+                    <img src="../public/images/slide-image-1.jpg" alt="slide-image-1">
+                </div>
+                <div>
+                    <img src="../public/images/slide-image-2.jpg" alt="slide-image-2">
+                </div>
+                <div>
+                    <img src="../public/images/slide-image-3.jpg" alt="slide-image-3">
+                </div>
             </div>
         </div> 
     </div>
@@ -43,6 +51,15 @@
     <script src="../public/js/jquery-3.3.1.min.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
     <script>
+        $("#slider-image>div:gt(0)").hide();
+        setInterval(function(){
+            $("#slider-image>div:first")
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo("#slider-image");
+        },5000);
     </script>
 </body>
 </html>
