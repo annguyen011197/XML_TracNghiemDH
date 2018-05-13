@@ -57,6 +57,9 @@ var config = {
         target: 'http://localhost:3000/',
         secure: false
       }
+    },
+    historyApiFallback: {
+      index: './src/index.html',
     }
   },
 
@@ -65,6 +68,7 @@ var config = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
   ],
+
 }
 
 module.exports = config;
