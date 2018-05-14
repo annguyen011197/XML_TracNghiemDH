@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 export default class Home extends Component {
   render() {
     return (
@@ -30,18 +31,19 @@ export default class Home extends Component {
                   <div>
                       <img src="../public/images/slide-image-1.jpg" alt="slide-image-1" />
                   </div>
-                  <div>
+                {/*<div>
                       <img src="../public/images/slide-image-2.jpg" alt="slide-image-2" />
                   </div>
                   <div>
                       <img src="../public/images/slide-image-3.jpg" alt="slide-image-3" />
-                  </div>
+                </div>*/}
               </div>
           </div> 
       </div>
       <footer>
       </footer>
     </div> 
+    
     )
   }
 }

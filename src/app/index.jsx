@@ -7,10 +7,9 @@ import RouterApp from  './components/App.jsx'
 class App extends React.Component {
   render () {
     return (
-      <div className="home">
+      <div>
         {/* <Demo /> */}
         <RouterApp />
-        <h1>Demo</h1>
       </div>
     );
   }
