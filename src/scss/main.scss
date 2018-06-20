@@ -1,23 +1,28 @@
 @import 'fonts';
-
 * {
   box-sizing: border-box;
 }
 
 body {
   background: #ececec;
-}
-
-body {
-  margin: 20px 50px 20px 50px;
+  margin: 0;
+  padding: 0;
   background-color: #4fc6da;
   font-family: 'Roboto', sans-serif;
 }
 
 nav #menu li {
+  margin-top: 20px;
   padding: 10px 10px;
   list-style-type: none;
   display: inline-block;
+  a {
+    padding: 10;
+    height: 80px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+  }
 }
 
 nav #menu li.top-register {
@@ -27,71 +32,51 @@ nav #menu li.top-register {
   line-height: 30px;
 }
 
-nav #menu li a{
-  padding: 10;
-  height: 80px;
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
-}
-
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
-.slider {
-  position: relative;
-  top:100px;
-  left: 20px;
-}
-.slider-text {
-  width: 40%;
-}
-.slider-text h1 {
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.4;
-  font-size: 80px;
-}
-.slider-text h2 {
-  color: #01516e;
-  font-weight: 700;
-  line-height: 1.4;
-  font-size: 20px;
-}
-.start-button button {
-  width: 250px;
-  height: 50px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: #01516e;
-  text-transform: uppercase;
-  position: relative;
-  top: 30px;
-  left: 60px;
-}
-.start-button button:hover {
-  background-color: #01516e;
-  color: #fff;
-  transition: all 0.5s ease-out; 
-}
-#slider-image {
-  width: 50%;
-  position: relative;
-  top: -300px;
-  left: 550px;
-}
-#slider-image img {
-  width: 700px;
-  height: auto;
-}
-#slider-image > div {
-  position: absolute;
-}
 
+.content {
+  margin: 50px 20px 50px 20px;
+  .slider-text {
+    h1 {
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 70px;
+    }
+    h2 {
+      color: #01516e;
+      font-weight: 700;
+      line-height: 1.4;
+      font-size: 20px;
+    }
+  }
+  .start-button button {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #01516e;
+    text-transform: uppercase;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    &:hover {
+      background-color: #01516e;
+      color: #fff;
+      transition: all 0.5s ease-out;
+    }
+  }
+  #video {
+    margin-top: 30px;
+  }
+}
